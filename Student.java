@@ -242,23 +242,7 @@ public class Student {
      *
      * All the students enrolled and in the list
      */
-    private void displayInfo(Student[] studentList)
-    {
-        for (Student student : studentList)
-        {
-            System.out.println("Student Name: " + getName());
-            System.out.println("Student ID: " + student.getId());
 
-            if (student.getCourses().size() > 0) {
-                System.out.println("Student's Current Courses:" + student.getCourses());
-            } else {
-                System.out.println("Student's Current Courses: The student isn't enrolled in any courses");
-            }
-            System.out.println("Student's Current Balance: $" + student.getTuition());
-            System.out.println("------------------------------------------------------");
-        }
-
-    }
 
     public static void main(String[] args) {
         try {
